@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>测试报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .centered-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 90px;
+            padding: 0 48px 20px;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 49px;
+            padding: 0 8px 2px;
+            text-align: center;
+            border: 2px solid #ddd;
+            background-color: #6cac57;
+        }
+        td {
+            padding: 12px;
+            border: 2px solid #ddd;
+            text-align: center;
+            min-width: 120px; /* 最小宽度 */
+            max-width: 400px; /* 最大宽度 */
+            overflow-wrap: break-word; /* 更好地进行换行处理 */
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+        tr:hover {
+            background-color: #ffffe0; /* 悬停时的浅黄色 */
+        }
+        .highlight {
+            background-color: #90ee90; /* 绿色背景 */
+        }
+        @media (max-width: 600px) {
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>  
+<body>  
+
+<h2 class="centered-text">自动化测试报告</h2>
+</br>
+</br>  
+    <table>  
+    <thead>  
+        <tr>  
+            <th>序号</th><th>测试步骤描述</th><th>关键字名称</th><th>操作元素的定位表达式</th><th>操作值</th><th>执行时间</th><th>执行结果</th><th>异常信息</th><th>截图路径</th>  
+        </tr>  
+    </thead>  
+    <tbody>  
+        <tr><td>1</td><td>打开chrome浏览器</td><td>open_browser</td><td></td><td>chrome</td><td>7时31分33秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>2</td><td>访问126邮箱首页</td><td>get</td><td></td><td>https://mail.126.com</td><td>7时31分35秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>3</td><td>切入到iframe中</td><td>switch_to_iframe</td><td>126mail_index||login_iframe </td><td></td><td>7时31分37秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>4</td><td>输入用户名testman1980</td><td>input</td><td>126mail_index||user_name</td><td>testman1980</td><td>7时31分37秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>5</td><td>输入密码wulaoshi1978</td><td>input</td><td>126mail_index||pass_word</td><td>wulaoshi1978</td><td>7时31分37秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>6</td><td>点击登录按钮</td><td>click</td><td>126mail_index||submit_button</td><td></td><td>7时31分37秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>7</td><td>等待4秒</td><td>sleep</td><td></td><td>4</td><td>7时31分37秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>8</td><td>断言通讯录是否出现在源码中</td><td>assert_word</td><td></td><td>通讯录</td><td>7时31分41秒</td><td>成功</td><td></td><td></td></tr>
+  
+    </tbody>  
+    </table>   
+    <br><br>  
+    <!DOCTYPE html>
+<html lang="zh">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>测试报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .centered-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 90px;
+            padding: 0 48px 20px;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 49px;
+            padding: 0 8px 2px;
+            text-align: center;
+            border: 2px solid #ddd;
+            background-color: #6cac57;
+        }
+        td {
+            padding: 12px;
+            border: 2px solid #ddd;
+            text-align: center;
+            min-width: 120px; /* 最小宽度 */
+            max-width: 400px; /* 最大宽度 */
+            overflow-wrap: break-word; /* 更好地进行换行处理 */
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+        tr:hover {
+            background-color: #ffffe0; /* 悬停时的浅黄色 */
+        }
+        .highlight {
+            background-color: #90ee90; /* 绿色背景 */
+        }
+        @media (max-width: 600px) {
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>  
+<body>  
+
+<h2 class="centered-text">自动化测试报告</h2>
+</br>
+</br>  
+    <table>  
+    <thead>  
+        <tr>  
+            <th>序号</th><th>测试用例名称</th><th>用例描述</th><th>用例步骤sheet名称</th><th>是否执行</th><th>测试执行时间</th><th>测试执行结果</th><th>异常信息</th><th>截图路径</th>  
+        </tr>  
+    </thead>  
+    <tbody>  
+        <tr><td>1</td><td>登录</td><td>使用正常用户名密码登录</td><td>登录</td><td>y</td><td>7时31分33秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>2</td><td>登录2</td><td>使用正常用户名密码登录</td><td>登录</td><td>n</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>3</td><td>发邮件</td><td>发送一封包含附件的邮件</td><td>发送邮件</td><td>y</td><td></td><td></td><td></td><td></td></tr>
+  
+    </tbody>  
+    </table>   
+    <br><br>  
+    <!DOCTYPE html>
+<html lang="zh">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>测试报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .centered-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 90px;
+            padding: 0 48px 20px;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 49px;
+            padding: 0 8px 2px;
+            text-align: center;
+            border: 2px solid #ddd;
+            background-color: #6cac57;
+        }
+        td {
+            padding: 12px;
+            border: 2px solid #ddd;
+            text-align: center;
+            min-width: 120px; /* 最小宽度 */
+            max-width: 400px; /* 最大宽度 */
+            overflow-wrap: break-word; /* 更好地进行换行处理 */
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+        tr:hover {
+            background-color: #ffffe0; /* 悬停时的浅黄色 */
+        }
+        .highlight {
+            background-color: #90ee90; /* 绿色背景 */
+        }
+        @media (max-width: 600px) {
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>  
+<body>  
+
+<h2 class="centered-text">自动化测试报告</h2>
+</br>
+</br>  
+    <table>  
+    <thead>  
+        <tr>  
+            <th>序号</th><th>测试步骤描述</th><th>关键字名称</th><th>操作元素的定位表达式</th><th>操作值</th><th>执行时间</th><th>执行结果</th><th>异常信息</th><th>截图路径</th>  
+        </tr>  
+    </thead>  
+    <tbody>  
+        <tr><td>1</td><td>打开chrome浏览器</td><td>open_browser</td><td></td><td>chrome</td><td>7时31分41秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>2</td><td>访问126邮箱首页</td><td>get</td><td></td><td>https://mail.126.com</td><td>7时31分43秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>3</td><td>切入到iframe中</td><td>switch_to_iframe</td><td>126mail_index||login_iframe </td><td></td><td>7时31分46秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>4</td><td>输入用户名testman1980</td><td>input</td><td>126mail_index||user_name</td><td>testman1980</td><td>7时31分46秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>5</td><td>输入密码wulaoshi1978</td><td>input</td><td>126mail_index||pass_word</td><td>wulaoshi1978</td><td>7时31分50秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>6</td><td>点击登录按钮</td><td>click</td><td>126mail_index||submit_button</td><td></td><td>7时31分50秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>7</td><td>等待4秒</td><td>sleep</td><td></td><td>4</td><td>7时31分50秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>8</td><td>断言通讯录是否出现在源码中</td><td>assert_word</td><td></td><td>通讯录</td><td>7时31分54秒</td><td>成功</td><td></td><td></td></tr>
+  
+    </tbody>  
+    </table>   
+    <br><br>  
+    <!DOCTYPE html>
+<html lang="zh">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>测试报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .centered-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 90px;
+            padding: 0 48px 20px;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 49px;
+            padding: 0 8px 2px;
+            text-align: center;
+            border: 2px solid #ddd;
+            background-color: #6cac57;
+        }
+        td {
+            padding: 12px;
+            border: 2px solid #ddd;
+            text-align: center;
+            min-width: 120px; /* 最小宽度 */
+            max-width: 400px; /* 最大宽度 */
+            overflow-wrap: break-word; /* 更好地进行换行处理 */
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+        tr:hover {
+            background-color: #ffffe0; /* 悬停时的浅黄色 */
+        }
+        .highlight {
+            background-color: #90ee90; /* 绿色背景 */
+        }
+        @media (max-width: 600px) {
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>  
+<body>  
+
+<h2 class="centered-text">自动化测试报告</h2>
+</br>
+</br>  
+    <table>  
+    <thead>  
+        <tr>  
+            <th>序号</th><th>测试步骤描述</th><th>关键字名称</th><th>操作元素的定位表达式</th><th>操作值</th><th>执行时间</th><th>执行结果</th><th>异常信息</th><th>截图路径</th>  
+        </tr>  
+    </thead>  
+    <tbody>  
+        <tr><td>1</td><td>使用正确的用户名和密码登录邮箱</td><td>key_word</td><td></td><td>登录</td><td>7时31分41秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>2</td><td>点击“写信”链接</td><td>click</td><td>126mail_home||write_letter_link</td><td></td><td>7时31分54秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>3</td><td>输入收件人地址</td><td>input</td><td>126mail_write||receipt</td><td>testman1980@126.com</td><td>7时31分54秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>4</td><td>输入邮件正文</td><td>input</td><td>126mail_write||subject</td><td>今天天气不错</td><td>7时31分55秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>5</td><td>上传附件</td><td>input</td><td>126mail_write||send_file</td><td>e:\\a.txt</td><td>7时31分55秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>6</td><td>等待3秒上传附件完成</td><td>sleep</td><td></td><td>3</td><td>7时31分55秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>7</td><td>切换到正文的iframe</td><td>switch_to_iframe</td><td>126mail_write||iframe</td><td></td><td>7时31分58秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>8</td><td>输入邮件的正文</td><td>input</td><td>126mail_write||content</td><td>下午没有课！</td><td>7时31分58秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>9</td><td>切出到iframe</td><td>switch_out_iframe</td><td></td><td></td><td>7时31分58秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>10</td><td>点击发送按钮</td><td>click</td><td>126mail_write||send_button</td><td></td><td>7时31分58秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>11</td><td>等待3秒邮件发送成功</td><td>sleep</td><td></td><td>3</td><td>7时31分58秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>12</td><td>断言邮件是否发送成功</td><td>assert_word</td><td></td><td>邮件发送成功</td><td>7时32分1秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>13</td><td>关闭浏览器</td><td>quit</td><td></td><td></td><td>7时32分1秒</td><td>成功</td><td></td><td></td></tr>
+  
+    </tbody>  
+    </table>   
+    <br><br>  
+    <!DOCTYPE html>
+<html lang="zh">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>测试报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .centered-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 90px;
+            padding: 0 48px 20px;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 49px;
+            padding: 0 8px 2px;
+            text-align: center;
+            border: 2px solid #ddd;
+            background-color: #6cac57;
+        }
+        td {
+            padding: 12px;
+            border: 2px solid #ddd;
+            text-align: center;
+            min-width: 120px; /* 最小宽度 */
+            max-width: 400px; /* 最大宽度 */
+            overflow-wrap: break-word; /* 更好地进行换行处理 */
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+        tr:hover {
+            background-color: #ffffe0; /* 悬停时的浅黄色 */
+        }
+        .highlight {
+            background-color: #90ee90; /* 绿色背景 */
+        }
+        @media (max-width: 600px) {
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>  
+<body>  
+
+<h2 class="centered-text">自动化测试报告</h2>
+</br>
+</br>  
+    <table>  
+    <thead>  
+        <tr>  
+            <th>序号</th><th>测试用例名称</th><th>用例描述</th><th>用例步骤sheet名称</th><th>是否执行</th><th>测试执行时间</th><th>测试执行结果</th><th>异常信息</th><th>截图路径</th>  
+        </tr>  
+    </thead>  
+    <tbody>  
+        <tr><td>1</td><td>登录</td><td>使用正常用户名密码登录</td><td>登录</td><td>y</td><td>7时31分33秒</td><td>成功</td><td></td><td></td></tr>
+<tr><td>2</td><td>登录2</td><td>使用正常用户名密码登录</td><td>登录</td><td>n</td><td>7时31分41秒</td><td></td><td></td><td></td></tr>
+<tr><td>3</td><td>发邮件</td><td>发送一封包含附件的邮件</td><td>发送邮件</td><td>y</td><td>7时31分41秒</td><td>成功</td><td></td><td></td></tr>
+  
+    </tbody>  
+    </table>   
+    <br><br>  
+    
